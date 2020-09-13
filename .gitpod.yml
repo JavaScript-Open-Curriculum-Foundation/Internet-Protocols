@@ -1,0 +1,19 @@
+tasks:
+  - init: echo "Replace me with a build script for the project."
+# Users should uncomment this line when they get to the mongo section.
+# command: mkdir -p /workspace/data && mongod --dbpath /workspace/data
+image:
+  file: .gitpod.Dockerfile
+vscode:
+  extensions:
+    - evilz.vscode-reveal@4.0.4:q3Ae+UO4Nv6SYzToAsa1zw==
+    - formulahendry.code-runner@0.11.0:HNAnyDKL6fUn1G8QfbKLpQ==
+    - statiolake.vscode-markdown-run-snippet@0.2.0:R4O1V3NAkPiU5xUmL5RdkQ==
+    - gitduck.code-streaming@0.1.22:FAJJ3grzJhtcEbaQvZSuQg==
+    - softwaredotcom.music-time@2.0.16:2mU8lWUWN53SChBCjrE8VA==
+    - HansUXdev.bootstrap5-snippets@1.2.3:e23xRdDNFFIPdzsiYVQ07g==
+    - HansUXdev.javascript-first-snippets@0.0.1:lZ24pWpflw/NOdGtfdx/hg==
+
+ports:
+- port: 3000
+  onOpen: open-preview
